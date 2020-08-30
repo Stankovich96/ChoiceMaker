@@ -95,9 +95,9 @@ const DisplayAnswer = (props) => {
       <div className="rating">
         <h3 className="rating-title">Popularity Poll</h3>
         <div className='rating-body'>
-        <p className="ratings-count">Questions:</p>
+        <p className="ratings-count">Question:</p>
         <p>{Question}</p>
-        <p className="ratings-count">Times Searched</p>
+        <p className="ratings-count">Rating</p>
         <p>{state.count}</p>
         </div>
         

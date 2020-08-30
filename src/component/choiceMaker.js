@@ -60,7 +60,7 @@ routeChange(){
       <h1 className="title">Choice Maker</h1>
       <p>🔥  When in doubt use choice maker 🔥</p>
       <div className="App-body" >
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className="form-body">
         <div className="question">
         <h2 className="question-title">Questions</h2>
         <input className="Input-style"  type="text" name="Question" id="qestionId" placeholder="Q: Enter your question here" value={this.state.question} onChange={this.handleChange}/>
