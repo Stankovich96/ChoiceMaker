@@ -36,11 +36,9 @@ handleSubmit(e){
  if( this.state.question !== "" && this.state.optionA !== "" && this.state.optionB !== "" && this.state.optionC !== "" && this.state.optionD !== ""){
    this.state.questions.push(this.state.question);
    this.state.options.push(this.state.optionA,this.state.optionB,this.state.optionC,this.state.optionD,);
-  //  console.log(this.state.questions)
-  //  console.log(this.state.options)
    this.routeChange();
   }else{
-    alert("Fill the questions and options mahn")
+    alert("Fill the questions and options mehn")
   }
  
 }

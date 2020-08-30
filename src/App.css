@@ -89,6 +89,22 @@
   font: bolder;
 }
 
+.answer-button {
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 10px;
+  font-size: large;
+  font: bolder;
+  cursor: pointer;
+  border: #282c34 1px solid;
+}
+
+.chosen-answer {
+  color: chocolate;
+}
+
 .not-found-image {
   height: 400px;
   width: 700px;
@@ -96,7 +112,29 @@
 
 .result-display {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rating-title {
+  align-self: center;
+}
+
+.rating-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.ratings-count {
+  color: black;
+  font-size: large;
+  font-weight: 700;
 }

@@ -73,33 +73,34 @@ const DisplayAnswer = (props) => {
       <div className="App" >
       <header className="App-header">
         Choice Maker
-        <Link to="/">
-      <input type="button" value="Ask another question" className="header-button" />
-      </Link>
       </header>
-      <h1>Choice Maker</h1>
-      <p>🔥  When in doubt use choice maker 🔥</p>
+      <p>🔥  When in doubt use choice maker and we would help you make a random selection 🔥</p>
       <div className="App-body" >
         {/* {console.log(data[1][1])} */}
-        <p>Question Asked:</p>
+        <h3>Question Asked:</h3>
        {Question}
       </div>
       <div className="result-display">
-      <div>options</div>
+      <h3>Options</h3>
       <p>A. {Options[0]}</p>
       <p>B. {Options[1]}</p>
       <p>C. {Options[2]}</p>
       <p>D. {Options[3]}</p>
       </div>
-      <p>Answer generated:{state.chosenAnswer}</p>
-      <input type="button" value="Generate answer" className="header-button" onClick={GenerateNewAnswer}/>
-
-      <div>
-        Popularity Poll
-        <p>Questions:</p>
-        {Question}
-        <p>Times Searched</p>
-        {state.count}
+      <p className="chosen-answer"><h3>Answer generated:</h3>{state.chosenAnswer}</p>
+      <input type="button" value="Generate answer" className="answer-button" onClick={GenerateNewAnswer}/>
+      <Link to="/">
+      <input type="button" value="Ask another question" className="answer-button" />
+      </Link>
+      <div className="rating">
+        <h3 className="rating-title">Popularity Poll</h3>
+        <div className='rating-body'>
+        <p className="ratings-count">Questions:</p>
+        <p>{Question}</p>
+        <p className="ratings-count">Times Searched</p>
+        <p>{state.count}</p>
+        </div>
+        
       </div>
     </div>
     )
