@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  justify-content: flex-start;
+  margin: 5px 0 0 0;
+}
+
+.Input-style {
+  align-self: center;
+  height: 50px;
+  width: 500px;
+  border-radius: 5px;
+  margin: 4px;
+  padding-left: 10px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.question-title {
+  align-self: flex-start;
+  margin: 5px 0 0 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin: 2px 0 5px 0;
+}
+
+.options-title {
+  align-self: flex-start;
+  margin: 5px 0 0 0;
+}
+
+.button {
+  align-self: center;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 10px;
+  font-size: large;
+  font: bolder;
+}
+
+.nomatch-button {
+  align-self: center;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 10px;
+  font-size: large;
+  font: bolder;
+}
+
+.header-button {
+  align-self: flex-end;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 10px;
+  font-size: large;
+  font: bolder;
+}
+
+.not-found-image {
+  height: 400px;
+  width: 700px;
+}
+
+.result-display {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
